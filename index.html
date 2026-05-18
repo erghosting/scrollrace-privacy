@@ -1,59 +1,501 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ScrollRace - Privacy Policy</title>
-<style>
-body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-h1 { color: #FF3B30; }
-h2 { color: #222; margin-top: 30px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – ScrollRace</title>
+  <style>
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --border: #2a2a3a;
+      --accent: #7c6af7;
+      --text: #e8e8f0;
+      --muted: #888899;
+      --ok: #4caf84;
+      --warn: #f0a045;
+      --danger: #e05555;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 1rem 4rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    header h1 { font-size: 2rem; font-weight: 800; color: var(--accent); }
+    header p { color: var(--muted); margin-top: 0.5rem; font-size: 0.9rem; }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 1.5rem 0 0.5rem;
+    }
+    p { margin-bottom: 0.8rem; }
+    ul, ol { margin: 0.5rem 0 0.8rem 1.4rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+      letter-spacing: 0.05em;
+    }
+    .badge-ok    { background: var(--ok);    color: #001a0e; }
+    .badge-warn  { background: var(--warn);  color: #1a0f00; }
+    .badge-miss  { background: var(--danger); color: #1a0000; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.88rem;
+    }
+    th {
+      background: var(--surface);
+      color: var(--muted);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--border);
+    }
+    td {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #14141e; }
+    .info-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .info-box strong { color: var(--accent); }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+  </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p><strong>Last updated: May 17, 2026</strong></p>
-<p>This Privacy Policy describes how ScrollRace (operated by Marco Breda, scrollrace.app@gmail.com) collects, uses, and protects your personal data when you use our Android application.</p>
+<div class="container">
 
-<h2>1. Data Controller</h2>
-<p>Marco Breda<br>Email: scrollrace.app@gmail.com</p>
+<header>
+  <h1>Privacy Policy — ScrollRace</h1>
+  <p>Versione 1.0 &mdash; In vigore dal 18 maggio 2026 &mdash; Lingua: italiano</p>
+  <p style="margin-top:0.8rem;">Questa privacy policy è redatta in conformità al <strong>Regolamento UE 2016/679 (GDPR)</strong>, alla normativa italiana in materia di protezione dei dati personali (D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018), alle <strong>Google Play Store policies</strong> e al <strong>Children's Online Privacy Protection Act (COPPA)</strong> statunitense.</p>
+</header>
 
-<h2>2. Data We Collect</h2>
+<!-- ═══════════════════════════════════════════════
+     1. TITOLARE E CONTATTI
+════════════════════════════════════════════════ -->
+<h2>1. Titolare del Trattamento e Contatti</h2>
+
+<p>Il titolare del trattamento dei dati personali raccolti tramite l'applicazione <strong>ScrollRace</strong> è:</p>
+
+<div class="info-box">
+  <strong>Marco Breda</strong><br />
+  Sviluppatore indipendente<br />
+  Email: <a href="mailto:marcobreda02@gmail.com">marcobreda02@gmail.com</a><br />
+  <br />
+  <em>Data Protection Officer (DPO):</em> non nominato obbligatoriamente (trattamento non su larga scala ex art. 37 GDPR). Per qualsiasi richiesta in materia di dati personali fare riferimento all'indirizzo email del titolare sopra indicato.
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     2. CHE COS'È SCROLLRACE
+════════════════════════════════════════════════ -->
+<h2>2. Descrizione dell'Applicazione</h2>
+
+<p>ScrollRace è un'applicazione Android che misura il tempo e la velocità di scorrimento (scroll) sulle principali app di social media installate sul dispositivo dell'utente, trasformando questi dati in una classifica competitiva tra amici. Lo scopo è ironicamente gamificare l'uso dei social media, rendendone visibile il tempo trascorso.</p>
+
+<p>Per funzionare, l'app richiede il permesso <strong>PACKAGE_USAGE_STATS</strong> (dati statistici sull'utilizzo delle applicazioni), che l'utente deve concedere manualmente nelle impostazioni di sistema Android.</p>
+
+<!-- ═══════════════════════════════════════════════
+     3. DATI RACCOLTI E FINALITÀ
+════════════════════════════════════════════════ -->
+<h2>3. Dati Raccolti, Finalità e Base Giuridica</h2>
+
+<p>La tabella seguente elenca ogni categoria di dato trattato, con finalità, base giuridica GDPR e periodo di conservazione.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categoria di dato</th>
+      <th>Finalità</th>
+      <th>Base giuridica (art. 6 GDPR)</th>
+      <th>Conservazione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Email e password</strong> (registrazione email)</td>
+      <td>Autenticazione all'account</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+    <tr>
+      <td><strong>Profilo Google</strong> (nome, email, foto profilo)</td>
+      <td>Autenticazione tramite Google Sign-In</td>
+      <td>Consenso (art. 6.1.a) — concesso durante il flusso OAuth Google</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+    <tr>
+      <td><strong>Username e foto profilo</strong></td>
+      <td>Identificazione nella classifica e nel profilo</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+    <tr>
+      <td><strong>Dati di utilizzo app</strong> (UsageStatsManager) — minuti e metri stimati per app, giorno per giorno</td>
+      <td>Calcolo del punteggio, generazione classifica, statistiche personali Scrollercoaster</td>
+      <td>Esecuzione del contratto (art. 6.1.b) — la funzionalità principale non è erogabile senza questi dati</td>
+      <td>Ultimi 365 giorni (dati storici giornalieri); dati aggregati settimanali/mensili/annuali fino alla cancellazione account</td>
+    </tr>
+    <tr>
+      <td><strong>Metri totali e giornalieri</strong> (punteggio aggregato)</td>
+      <td>Classifica tra amici, badge, gamification</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+    <tr>
+      <td><strong>Codice amico (friendCode)</strong></td>
+      <td>Sistema di invito e collegamento tra amici</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+    <tr>
+      <td><strong>Streak e badge sbloccati</strong></td>
+      <td>Gamification, motivazione, progressione</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+    <tr>
+      <td><strong>Token FCM</strong> (Firebase Cloud Messaging)</td>
+      <td>Invio notifiche push (classifiche, Scrollercoaster)</td>
+      <td>Interesse legittimo (art. 6.1.f) — notifiche strettamente funzionali al servizio; l'utente può disattivarle nelle impostazioni Android</td>
+      <td>Aggiornato ad ogni avvio; rimosso alla cancellazione account</td>
+    </tr>
+    <tr>
+      <td><strong>Dati di utilizzo notturno</strong> (fasce orarie 00:00–06:00)</td>
+      <td>Badge "L'Alba mi Giudica" e statistiche Scrollercoaster</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Aggregati, stessa retention dei dati di utilizzo app</td>
+    </tr>
+    <tr>
+      <td><strong>Identificatore Firebase UID</strong></td>
+      <td>Chiave primaria del profilo su Firestore</td>
+      <td>Esecuzione del contratto (art. 6.1.b)</td>
+      <td>Fino alla cancellazione dell'account</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="info-box">
+  <strong>Nessun dato biometrico, di salute, giudiziario o di geolocalizzazione</strong> viene raccolto. ScrollRace non accede a microfono, fotocamera o rubrica telefonica.
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     4. PERMESSO PACKAGE_USAGE_STATS
+════════════════════════════════════════════════ -->
+<h2>4. Permesso PACKAGE_USAGE_STATS — App Monitorate</h2>
+
+<p>Per misurare il tempo di utilizzo dei social media, ScrollRace richiede il permesso di sistema <strong>PACKAGE_USAGE_STATS</strong> (accesso alle statistiche di utilizzo delle applicazioni). Questo permesso <strong>non è concesso automaticamente</strong>: l'utente deve abilitarlo manualmente in <em>Impostazioni &gt; App &gt; Accesso speciale alle app &gt; Utilizzo dati</em>.</p>
+
+<h3>4.1 App attualmente monitorate</h3>
+<p>ScrollRace legge i dati di utilizzo <em>esclusivamente</em> per le seguenti applicazioni. Il monitoraggio non riguarda nessun'altra app installata sul dispositivo.</p>
+
+<table>
+  <thead>
+    <tr><th>Applicazione</th><th>Package Android</th><th>Velocità scroll stimata</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>TikTok</td><td>com.zhiliaoapp.musically</td><td>160 m/h</td></tr>
+    <tr><td>X (Twitter)</td><td>com.twitter.android</td><td>140 m/h</td></tr>
+    <tr><td>Instagram</td><td>com.instagram.android</td><td>120 m/h</td></tr>
+    <tr><td>Threads</td><td>com.instagram.barcelona</td><td>110 m/h</td></tr>
+    <tr><td>Reddit</td><td>com.reddit.frontpage</td><td>100 m/h</td></tr>
+    <tr><td>Snapchat</td><td>com.snapchat.android</td><td>90 m/h</td></tr>
+    <tr><td>Facebook</td><td>com.facebook.katana</td><td>80 m/h</td></tr>
+    <tr><td>Pinterest</td><td>com.pinterest</td><td>70 m/h</td></tr>
+    <tr><td>LinkedIn</td><td>com.linkedin.android</td><td>60 m/h</td></tr>
+    <tr><td>YouTube</td><td>com.google.android.youtube</td><td>30 m/h</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Modalità di accesso:</strong> i dati di utilizzo sono letti in locale tramite le API Android <code>UsageStatsManager</code>. L'elenco delle app installate sul dispositivo non viene trasmesso a terzi; solo i minuti di utilizzo delle app elencate sopra vengono caricati su Firebase Firestore (v. sezione 6).</p>
+
+<h3>4.2 Come revocare il permesso</h3>
+<p>L'utente può revocare il permesso PACKAGE_USAGE_STATS in qualsiasi momento da <em>Impostazioni &gt; App &gt; Accesso speciale alle app &gt; Utilizzo dati &gt; ScrollRace</em>. La revoca comporta l'impossibilità di calcolare nuovi punteggi, ma non elimina i dati già sincronizzati.</p>
+
+<!-- ═══════════════════════════════════════════════
+     5. DATI CONDIVISI CON TERZI
+════════════════════════════════════════════════ -->
+<h2>5. Destinatari dei Dati e Trasferimento Extra-UE</h2>
+
+<h3>5.1 Terzi che ricevono i dati</h3>
+<table>
+  <thead>
+    <tr><th>Destinatario</th><th>Ruolo</th><th>Dati trasmessi</th><th>Luogo elaborazione</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Google LLC</strong> — Firebase Firestore &amp; Auth</td>
+      <td>Responsabile del trattamento (DPA firmato)</td>
+      <td>Profilo utente, metriche di utilizzo, badge, streak</td>
+      <td>USA (v. §5.2)</td>
+    </tr>
+    <tr>
+      <td><strong>Google LLC</strong> — Firebase Cloud Messaging</td>
+      <td>Responsabile del trattamento</td>
+      <td>Token FCM, contenuto notifiche</td>
+      <td>USA (v. §5.2)</td>
+    </tr>
+    <tr>
+      <td><strong>Google LLC</strong> — Firebase Storage</td>
+      <td>Responsabile del trattamento</td>
+      <td>Foto profilo (se caricata)</td>
+      <td>USA (v. §5.2)</td>
+    </tr>
+    <tr>
+      <td><strong>Google LLC</strong> — Google Sign-In</td>
+      <td>Responsabile del trattamento</td>
+      <td>Token OAuth, profilo Google</td>
+      <td>USA (v. §5.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ScrollRace non vende, affitta o cede i dati a fini pubblicitari.</strong> Nessun SDK di analytics o advertising di terze parti è integrato nell'applicazione.</p>
+
+<h3>5.2 Trasferimento dati extra-UE (Firebase = server USA)</h3>
+
+<p>Google LLC è certificata ai sensi del <strong>Data Privacy Framework EU–USA</strong> (decisione di adeguatezza della Commissione UE del 10 luglio 2023) e ha stipulato con Anthropic — e con tutti i responsabili Firebase — le <strong>Clausole Contrattuali Standard</strong> (SCC) previste dall'art. 46 GDPR. Il trasferimento verso gli USA avviene quindi su base legale adeguata.</p>
+
+<p>Per maggiori informazioni: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+<!-- ═══════════════════════════════════════════════
+     6. SICUREZZA DEI DATI
+════════════════════════════════════════════════ -->
+<h2>6. Misure di Sicurezza</h2>
+
 <ul>
-<li><strong>Account data:</strong> email address, username, profile photo</li>
-<li><strong>Usage data:</strong> time spent on social media apps (via Android UsageStatsManager), converted to scroll distance in meters</li>
-<li><strong>Device data:</strong> anonymous device identifiers used by Firebase</li>
+  <li>Tutti i dati in transito sono cifrati tramite <strong>TLS 1.2+</strong> (HTTPS enforced).</li>
+  <li>I dati su Firebase Firestore sono cifrati a riposo (<strong>AES-256</strong>) da Google.</li>
+  <li>L'accesso a Firestore è protetto da <strong>regole di sicurezza</strong> che consentono la lettura/scrittura solo all'utente proprietario del documento (<code>request.auth.uid == userId</code>).</li>
+  <li>Le password (login email) non sono mai memorizzate in chiaro: gestite interamente da <strong>Firebase Authentication</strong> con hashing bcrypt.</li>
+  <li>Nessun dato personale è scritto in log locali o condiviso via clipboard senza consenso esplicito dell'utente.</li>
+  <li>In caso di violazione dei dati che comporti un rischio elevato per gli interessati, il titolare notificherà le autorità competenti entro <strong>72 ore</strong> (art. 33 GDPR) e gli utenti senza indebito ritardo (art. 34 GDPR).</li>
 </ul>
 
-<h2>3. How We Use Your Data</h2>
+<!-- ═══════════════════════════════════════════════
+     7. DIRITTI DEGLI INTERESSATI
+════════════════════════════════════════════════ -->
+<h2>7. Diritti degli Interessati (artt. 15–22 GDPR)</h2>
+
+<p>In qualità di interessato, hai i seguenti diritti, esercitabili in qualsiasi momento scrivendo a <a href="mailto:marcobreda02@gmail.com">marcobreda02@gmail.com</a>. Risponderemo entro <strong>30 giorni</strong> dalla ricezione della richiesta (prorogabili a 90 giorni per richieste complesse, con comunicazione dei motivi).</p>
+
+<table>
+  <thead>
+    <tr><th>Diritto</th><th>Riferimento GDPR</th><th>Come esercitarlo</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Accesso</strong> — ottenere copia dei tuoi dati personali trattati</td>
+      <td>Art. 15</td>
+      <td>Email al titolare — risposta entro 30 gg</td>
+    </tr>
+    <tr>
+      <td><strong>Rettifica</strong> — correggere dati inesatti o incompleti</td>
+      <td>Art. 16</td>
+      <td>Direttamente nell'app (schermata Profilo) oppure via email</td>
+    </tr>
+    <tr>
+      <td><strong>Cancellazione ("diritto all'oblio")</strong> — eliminare il tuo account e tutti i dati associati</td>
+      <td>Art. 17</td>
+      <td>Sezione 8 di questa policy — procedura dettagliata</td>
+    </tr>
+    <tr>
+      <td><strong>Limitazione del trattamento</strong> — bloccare temporaneamente il trattamento contestando l'esattezza dei dati o opponendoti al trattamento</td>
+      <td>Art. 18</td>
+      <td>Email al titolare</td>
+    </tr>
+    <tr>
+      <td><strong>Portabilità</strong> — ricevere i tuoi dati in formato strutturato e leggibile da macchina (JSON)</td>
+      <td>Art. 20</td>
+      <td>Email al titolare — export fornito entro 30 gg</td>
+    </tr>
+    <tr>
+      <td><strong>Opposizione</strong> — opporti al trattamento basato su interesse legittimo</td>
+      <td>Art. 21</td>
+      <td>Email al titolare (es. per notifiche push)</td>
+    </tr>
+    <tr>
+      <td><strong>Revoca del consenso</strong> — revocare il consenso precedentemente prestato senza pregiudicare la liceità del trattamento ante-revoca</td>
+      <td>Art. 7.3</td>
+      <td>Disabilita Google Sign-In dalle impostazioni del tuo account Google, oppure contatta il titolare</td>
+    </tr>
+    <tr>
+      <td><strong>Reclamo all'Autorità di controllo</strong> — presentare reclamo al Garante per la Protezione dei Dati Personali</td>
+      <td>Art. 77</td>
+      <td><a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════
+     8. CANCELLAZIONE ACCOUNT
+════════════════════════════════════════════════ -->
+<h2>8. Cancellazione dell'Account e dei Dati</h2>
+
+<p>Hai il diritto di richiedere la cancellazione completa del tuo account ScrollRace e di tutti i dati personali associati, senza necessità di fornire motivazioni.</p>
+
+<h3>Procedura di cancellazione</h3>
+<ol>
+  <li>Invia una email a <a href="mailto:marcobreda02@gmail.com">marcobreda02@gmail.com</a> con oggetto: <strong>"Cancellazione account ScrollRace"</strong>.</li>
+  <li>Indica l'indirizzo email o l'username associato all'account (non è richiesta alcuna documentazione aggiuntiva).</li>
+  <li>Riceverai conferma entro <strong>72 ore lavorative</strong>.</li>
+  <li>Tutti i dati (profilo, metriche, badge, storico) saranno eliminati da Firebase Firestore entro <strong>30 giorni</strong> dalla conferma.</li>
+  <li>I backup tecnici di Google Firebase potrebbero contenere copia dei dati per un ulteriore periodo non superiore a <strong>90 giorni</strong>, decorsi i quali la cancellazione è definitiva e irreversibile.</li>
+</ol>
+
+<div class="info-box">
+  <strong>Alternativa in-app:</strong> Puoi accedere alla funzione di cancellazione account direttamente dalla schermata <em>Profilo &gt; Impostazioni &gt; Elimina account</em>. La cancellazione in-app avvia la stessa procedura descritta sopra ed è operativa a partire dalla versione 1.1 dell'app.
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     9. COOKIE E TRACKING
+════════════════════════════════════════════════ -->
+<h2>9. Cookie e Tecnologie di Tracciamento</h2>
+
+<p>ScrollRace è un'applicazione Android nativa. <strong>Non utilizza cookie</strong> nel senso tecnico del termine (tecnologia propria dei browser web).</p>
+
+<p>L'applicazione utilizza le seguenti tecnologie funzionalmente analoghe:</p>
+
 <ul>
-<li>To provide the app's core functionality (tracking, leaderboards, badges)</li>
-<li>To send push notifications about your ranking and weekly recaps</li>
-<li>To store and sync your data across sessions</li>
+  <li><strong>SharedPreferences Android:</strong> memorizzazione locale di preferenze (es. data ultimo Scrollercoaster, notifiche già mostrate). Nessun dato personale identificativo è scritto in SharedPreferences.</li>
+  <li><strong>Firebase Authentication token:</strong> token di sessione cifrato, conservato in locale su Android Keystore, necessario per l'autenticazione. Non accessibile ad altre app.</li>
+  <li><strong>Token FCM:</strong> identificatore pseudonimo del dispositivo per notifiche push. Non contiene dati anagrafici.</li>
 </ul>
 
-<h2>4. Third-Party Services</h2>
+<p>ScrollRace <strong>non utilizza</strong> SDK di analisi comportamentale (Google Analytics, Mixpanel, Amplitude, ecc.), pubblicità comportamentale, pixel di tracciamento o fingerprinting del dispositivo.</p>
+
+<!-- ═══════════════════════════════════════════════
+     10. ETÀ MINIMA E COPPA
+════════════════════════════════════════════════ -->
+<h2>10. Età Minima e Protezione dei Minori (COPPA)</h2>
+
+<p>ScrollRace è destinata esclusivamente a utenti di età pari o superiore a <strong>13 anni</strong>. L'applicazione <strong>non è diretta a bambini al di sotto dei 13 anni</strong> e non raccoglie consapevolmente dati personali di minori di 13 anni.</p>
+
+<p>Negli Stati Uniti, il trattamento di dati di minori di 13 anni è regolato dal <em>Children's Online Privacy Protection Act (COPPA)</em>. In conformità a COPPA, ScrollRace:</p>
 <ul>
-<li><strong>Firebase Authentication</strong> – user login and registration</li>
-<li><strong>Cloud Firestore</strong> – storing user data and leaderboards</li>
-<li><strong>Firebase Storage</strong> – storing profile photos</li>
-<li><strong>Firebase Cloud Messaging</strong> – push notifications</li>
+  <li>Non raccoglie intenzionalmente informazioni personali da bambini sotto i 13 anni.</li>
+  <li>Non consente la registrazione di account a utenti che dichiarano un'età inferiore a 13 anni.</li>
+  <li>Non condivide dati di minori con terze parti a fini commerciali.</li>
 </ul>
-<p>These services are operated by Google LLC. See <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2>5. Data Retention</h2>
-<p>Your data is retained as long as your account is active. You can request deletion at any time by contacting scrollrace.app@gmail.com or using the Delete Account option in the app.</p>
+<p>Nell'Unione Europea, ai sensi dell'art. 8 GDPR, il consenso al trattamento dei dati per i servizi della società dell'informazione richiede il consenso del genitore o tutore per i minori di età inferiore a <strong>16 anni</strong> (14 anni in Italia ai sensi dell'art. 2-quinquies del D.Lgs. 196/2003). Se sei un minore di 14 anni (in Italia) o 16 anni (in altri Paesi UE), ti chiediamo di non utilizzare ScrollRace senza il consenso di un genitore o tutore.</p>
 
-<h2>6. Your Rights (GDPR)</h2>
-<p>If you are located in the EU, you have the right to access, correct, delete, and export your personal data. Contact us at scrollrace.app@gmail.com to exercise these rights.</p>
+<p>Se veniamo a conoscenza di aver raccolto involontariamente dati di un minore di 13 anni, provvederemo alla cancellazione immediata di tali dati. Per segnalazioni: <a href="mailto:marcobreda02@gmail.com">marcobreda02@gmail.com</a>.</p>
 
-<h2>7. Children</h2>
-<p>ScrollRace is not intended for users under 13 years of age. We do not knowingly collect data from children.</p>
+<!-- ═══════════════════════════════════════════════
+     11. CONSERVAZIONE DEI DATI
+════════════════════════════════════════════════ -->
+<h2>11. Periodo di Conservazione per Categoria di Dato</h2>
 
-<h2>8. Changes</h2>
-<p>We may update this policy. We will notify users of significant changes via the app.</p>
+<table>
+  <thead>
+    <tr><th>Categoria</th><th>Conservazione</th><th>Motivazione</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dati di autenticazione (email, UID Firebase)</td>
+      <td>Fino alla cancellazione account</td>
+      <td>Necessario per l'accesso al servizio</td>
+    </tr>
+    <tr>
+      <td>Profilo utente (username, foto, friendCode)</td>
+      <td>Fino alla cancellazione account</td>
+      <td>Visibilità nella classifica</td>
+    </tr>
+    <tr>
+      <td>Dati di utilizzo app giornalieri (history)</td>
+      <td>365 giorni rotanti</td>
+      <td>Statistiche storiche Scrollercoaster (anno)</td>
+    </tr>
+    <tr>
+      <td>Aggregati periodici (week/month/year summaries)</td>
+      <td>Fino alla cancellazione account</td>
+      <td>Confronto con periodi precedenti</td>
+    </tr>
+    <tr>
+      <td>Badge e streak</td>
+      <td>Fino alla cancellazione account</td>
+      <td>Progressione gamification</td>
+    </tr>
+    <tr>
+      <td>Token FCM</td>
+      <td>Aggiornato ad ogni avvio; max 6 mesi di inattività</td>
+      <td>Notifiche push; scade se l'app non viene aperta</td>
+    </tr>
+    <tr>
+      <td>Backup tecnici Firebase</td>
+      <td>Max 90 giorni dopo cancellazione account</td>
+      <td>Policy di retention Google Firebase</td>
+    </tr>
+  </tbody>
+</table>
 
-<h2>9. Contact</h2>
-<p>scrollrace.app@gmail.com</p>
+<!-- ═══════════════════════════════════════════════
+     12. MODIFICHE ALLA POLICY
+════════════════════════════════════════════════ -->
+<h2>12. Modifiche alla Privacy Policy</h2>
+
+<p>Il titolare si riserva il diritto di modificare questa privacy policy in qualsiasi momento. In caso di modifiche sostanziali (es. nuovi tipi di dati raccolti, nuovi destinatari), gli utenti saranno notificati tramite:</p>
+<ul>
+  <li>Notifica push in-app almeno <strong>15 giorni prima</strong> dell'entrata in vigore delle modifiche.</li>
+  <li>Aggiornamento della data "In vigore dal" in questa pagina.</li>
+</ul>
+<p>L'uso continuato dell'app dopo la data di entrata in vigore costituisce accettazione della policy aggiornata. In caso di modifiche che richiedano nuovo consenso (art. 7 GDPR), il consenso sarà richiesto esplicitamente prima dell'accesso alle funzionalità.</p>
+
+<!-- ═══════════════════════════════════════════════
+     13. LEGGE APPLICABILE E FORO
+════════════════════════════════════════════════ -->
+<h2>13. Legge Applicabile e Foro Competente</h2>
+
+<p>La presente privacy policy è regolata dalla legge italiana e dal diritto dell'Unione Europea. Per qualsiasi controversia relativa al trattamento dei dati personali è competente il Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>). Per controversie civili è competente il foro del luogo di residenza dell'interessato (art. 79 GDPR).</p>
+
+<footer>
+  <p><strong>ScrollRace</strong> &mdash; Privacy Policy v1.0 &mdash; 18 maggio 2026</p>
+  <p>Titolare: Marco Breda &mdash; <a href="mailto:marcobreda02@gmail.com">marcobreda02@gmail.com</a></p>
+  <p style="margin-top:0.5rem; color:#555566;">Questo documento è stato redatto in conformità a GDPR (Reg. UE 2016/679), D.Lgs. 196/2003 mod. D.Lgs. 101/2018, Google Play Store Policies e COPPA (15 U.S.C. § 6501).</p>
+</footer>
+
+</div>
 </body>
 </html>
